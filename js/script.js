@@ -133,16 +133,70 @@ const menu = document.querySelector('.header__menu-burger'),
       header = document.querySelector('.header');
 
 const headerScroll = () => {
-    if (window.pageYOffset > 50) {
+    if (window.pageYOffset > 80) {
         header.classList.add('fixed');
     } else {
         header.classList.remove('fixed');
     }
 };
 
+const select = function()  {
+	const selectHeader = document.querySelectorAll('.select-header'),
+		  selectItem = document.querySelectorAll('.select-body__item');
+
+	const selectToggle = function (e) {
+		this.parentElement.classList.toggle('active');
+		if (this.parentElement.classList.contains('active')) {
+			document.querySelector('.select-header__icon').classList.add('active');
+		} else {
+			document.querySelector('.select-header__icon').classList.remove('active');
+		}
+	};
+
+	const selectChoose = function () {
+		const text = this.innerHTML,
+		      select = this.closest('.select'),
+			  currentText = this.closest('.select').querySelector('.select-header__current');
+
+		currentText.innerHTML = text;
+		select.classList.remove('active');
+		document.querySelector('.select-header__icon').classList.remove('active');
+	};
+
+	document.addEventListener('click', (e) => {
+		if (!e.target.closest('.select')) {
+			document.querySelector('.select').classList.remove('active');
+			document.querySelector('.select-header__icon').classList.remove('active');
+		}
+	});
+
+	selectHeader.forEach( item => {
+		item.addEventListener('click', selectToggle);
+	});
+
+	selectItem.forEach( item => {
+		item.addEventListener('click', selectChoose);
+	});
+};
+
+select();
+
 menu.addEventListener('click', () => {
     menu.classList.toggle('active');
-    menuSide.classList.toggle('active');
+	menuSide.classList.toggle('active');
+	if (menuSide.classList.contains('active')) {
+		document.querySelector('body').style.overflow = 'hidden';
+	} else {
+		document.querySelector('body').style.overflow = 'visible';
+	}
+});
+
+document.addEventListener('click', (e) => {
+	if (!e.target.closest('.header__menu')) {
+		menuSide.classList.remove('active');
+		menu.classList.remove('active');
+		document.querySelector('body').style.overflow = 'visible';
+	}
 });
 
 window.addEventListener('scroll', headerScroll);
