@@ -212,3 +212,46 @@ hoodContent.addEventListener('mousemove', (e) => {
         item.style.transform =  'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)';
     });
 });
+
+// document.querySelector('body').addEventListener('load', function() {
+// 	alert('hsdfhdyvbudbuy');
+	
+// 	setTimeout(function() {
+// 		$('#ctn-preloader').addClass('loaded');
+// 		// Once the preloader has finished, the scroll appears
+// 		$('#preloader-body').removeClass('no-scroll-y');
+	
+// 		if ($('#ctn-preloader').hasClass('loaded')) {
+// 		  // It is so that once the preloader is gone, the entire preloader section will removed
+// 		  $('#preloader').delay(1000).queue(function() {
+// 			$(this).remove();
+// 		  });
+// 		}
+// 	  }, 500);
+// });
+
+document.body.onload = function() {
+		setTimeout(function() {
+		$('#ctn-preloader').addClass('loaded');
+		// Once the preloader has finished, the scroll appears
+		$('#preloader-body').removeClass('no-scroll-y');
+	
+		if ($('#ctn-preloader').hasClass('loaded')) {
+		  // It is so that once the preloader is gone, the entire preloader section will removed
+		  $('#preloader').delay(1000).queue(function() {
+			$(this).remove();
+		  });
+		}
+	  }, 500);
+};
+
+// setTimeout(function() {
+// 	document.getElementById('#ctn-preloader').classList.add('loaded');
+// 	document.getElementById('#preloader-body').classList.remove('no-scroll-y');
+
+// 	if (document.getElementById('#ctn-preloader').classList.contains('loaded')) {
+// 		document.getElementById('#preloader').delay(1000).queue(function() {
+// 			this.remove();
+// 		  });
+// 	}
+//   }, 500);
