@@ -184,11 +184,11 @@ select();
 menu.addEventListener('click', () => {
     menu.classList.toggle('active');
 	menuSide.classList.toggle('active');
-	if (menuSide.classList.contains('active')) {
-		document.querySelector('body').style.overflow = 'hidden';
-	} else {
-		document.querySelector('body').style.overflow = 'visible';
-	}
+	// if (menuSide.classList.contains('active')) {
+	// 	document.querySelector('body').style.overflowY = 'hidden';
+	// } else {
+	// 	document.querySelector('body').style.overflowY = 'visible';
+	// }
 });
 
 document.addEventListener('click', (e) => {
