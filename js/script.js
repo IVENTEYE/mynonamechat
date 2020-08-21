@@ -231,21 +231,18 @@ document.body.onload = function() {
 	  }, 500);
 };
 
-let swiper= new Swiper('.swiper-container', {
-	slidesPerView: 1,
-	spaceBetween: 50,
-	breakpoints: {
-		320: {
-			slidesPerView: 2,
-		  },
-		700: {
-			slidesPerView: 3,
-		  },
-		  992: {
-			slidesPerView: 4,
-		  },
-
-	},
+$('.owl-carousel').owlCarousel({
+	margin:20,
+    loop:true,
+    autoWidth:true,
+	dots:false,
+	nav: false,
+	// center: true,
+    responsive:{
+      330:{
+        margin:10
+      }
+    }
 });
 
 $("#example_id").ionRangeSlider({
