@@ -130,7 +130,10 @@
 
 const menu = document.querySelector('.header__menu-burger'),
       menuSide = document.querySelector('.header__menu-body'),
-      header = document.querySelector('.header');
+	  header = document.querySelector('.header'),
+	  settingsButton = document.querySelector('.page-content__settings'),
+	  closeSettingsButton = document.querySelector('.page-content__button'),
+	  settingsCard = document.querySelector('.chat-welcome');
 
 const headerScroll = () => {
     if (window.pageYOffset > 80) {
@@ -213,23 +216,6 @@ hoodContent.addEventListener('mousemove', (e) => {
     });
 });
 
-// document.querySelector('body').addEventListener('load', function() {
-// 	alert('hsdfhdyvbudbuy');
-	
-// 	setTimeout(function() {
-// 		$('#ctn-preloader').addClass('loaded');
-// 		// Once the preloader has finished, the scroll appears
-// 		$('#preloader-body').removeClass('no-scroll-y');
-	
-// 		if ($('#ctn-preloader').hasClass('loaded')) {
-// 		  // It is so that once the preloader is gone, the entire preloader section will removed
-// 		  $('#preloader').delay(1000).queue(function() {
-// 			$(this).remove();
-// 		  });
-// 		}
-// 	  }, 500);
-// });
-
 document.body.onload = function() {
 		setTimeout(function() {
 		$('#ctn-preloader').addClass('loaded');
@@ -245,13 +231,41 @@ document.body.onload = function() {
 	  }, 500);
 };
 
-// setTimeout(function() {
-// 	document.getElementById('#ctn-preloader').classList.add('loaded');
-// 	document.getElementById('#preloader-body').classList.remove('no-scroll-y');
+let swiper= new Swiper('.swiper-container', {
+	slidesPerView: 1,
+	spaceBetween: 50,
+	breakpoints: {
+		320: {
+			slidesPerView: 2,
+		  },
+		700: {
+			slidesPerView: 3,
+		  },
+		  992: {
+			slidesPerView: 4,
+		  },
 
-// 	if (document.getElementById('#ctn-preloader').classList.contains('loaded')) {
-// 		document.getElementById('#preloader').delay(1000).queue(function() {
-// 			this.remove();
-// 		  });
-// 	}
-//   }, 500);
+	},
+});
+
+$("#example_id").ionRangeSlider({
+	type: "double",
+	min: 15,
+	max: 100,
+	from: 15,
+	to: 100,
+});
+
+settingsButton.addEventListener('click', (e) => {
+	e.preventDefault();
+	settingsCard.classList.add('active');
+	document.querySelector('.page-content__chat').style.display = 'block';
+});
+
+closeSettingsButton.addEventListener('click', (e) => {
+	settingsCard.classList.remove('active');
+
+	setTimeout(function() {
+		document.querySelector('.page-content__chat').style.display = 'none';
+	  }, 300);
+});
