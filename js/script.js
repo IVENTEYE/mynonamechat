@@ -256,15 +256,12 @@ $("#example_id").ionRangeSlider({
 settingsButton.addEventListener('click', (e) => {
 	e.preventDefault();
 	settingsCard.classList.add('active');
-	document.querySelector('.page-content__chat').style.display = 'block';
+	document.querySelector('.page-content__chat').classList.add('active');
 });
 
 closeSettingsButton.addEventListener('click', (e) => {
 	settingsCard.classList.remove('active');
-
-	setTimeout(function() {
-		document.querySelector('.page-content__chat').style.display = 'none';
-	  }, 300);
+	document.querySelector('.page-content__chat').classList.remove('active');
 });
 
 const popupLinks = document.querySelectorAll('.page-tape__add'),
