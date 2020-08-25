@@ -189,18 +189,18 @@ select();
 menu.addEventListener('click', () => {
     menu.classList.toggle('active');
 	menuSide.classList.toggle('active');
-	// if (menuSide.classList.contains('active')) {
-	// 	document.querySelector('body').style.overflowY = 'hidden';
-	// } else {
-	// 	document.querySelector('body').style.overflowY = 'visible';
-	// }
+	if (menuSide.classList.contains('active')) {
+		document.querySelector('body').style.overflowY = 'hidden';
+	} else {
+		document.querySelector('body').style.overflowY = 'visible';
+	}
 });
 
 document.addEventListener('click', (e) => {
 	if (!e.target.closest('.header__menu')) {
 		menuSide.classList.remove('active');
 		menu.classList.remove('active');
-		// document.querySelector('body').style.overflow = 'visible';
+		document.querySelector('body').style.overflow = 'visible';
 	}
 });
 
@@ -209,16 +209,16 @@ window.addEventListener('scroll', headerScroll);
 const hoodContent = document.querySelector('.hood-content'),
 	  emojiMove = document.querySelectorAll('.items-dynamic__item');
 	  
-if (hoodContent) {
-	hoodContent.addEventListener('mousemove', (e) => {
-		const x = e.pageX / window.innerWidth,
-			  y = e.pageY / window.innerHeight;
-		  
-		emojiMove.forEach( item => {
-			item.style.transform =  'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)';
+	if (hoodContent) {
+		hoodContent.addEventListener('mousemove', (e) => {
+			const x = e.pageX / window.innerWidth,
+				  y = e.pageY / window.innerHeight;
+			  
+			emojiMove.forEach( item => {
+				item.style.transform =  'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)';
+			});
 		});
-	});
-}
+	}
 
 document.body.onload = function() {
 		setTimeout(function() {
@@ -271,6 +271,7 @@ if (closeSettingsButton) {
 		document.querySelector('.page-content__chat').classList.remove('active');
 	});
 }
+
 
 const popupLinks = document.querySelectorAll('.page-tape__add'),
       body = document.querySelector('body'),
@@ -391,7 +392,7 @@ document.addEventListener('keydown', (e) => {
 })();
 
 if (document.querySelector('.chat-page__send')) {
-	/**
+		/**
  * Анонимная самовызывающаяся функция-обертка
  * @param {document} d - получает документ
  */
@@ -680,3 +681,4 @@ if (document.querySelector('.chat-page__send')) {
   // запуск основной функции
   einput.init();
 }
+

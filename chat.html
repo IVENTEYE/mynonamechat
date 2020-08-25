@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Чат</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/sprite.css">
     <script src="js/jquery-3.5.1.min.js" defer></script>
     <script src="js/owl.carousel.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js" defer></script>
@@ -58,76 +59,77 @@
         </div>
     </header>
     <main class="page">
-        <div class="page__container chat__container container">
-            <div class="page__chat chat-page">
-                <div class="chat-page__header">
-                    <div class="chat-page__user user-chat">
-                        <a href="#" class="user-chat__icon"><img src="img/user-chat-icon.svg" alt="user icon"></a>
-                        <a href="#" class="user-chat__name">Твоя Незнакомка</a>
-                        <div class="user-tape__status"><span>Online</span></div>
+        <div class="page-chat">
+            <div class="page__container chat__container container">
+                <div class="page__chat chat-page">
+                    <div class="chat-page__header">
+                        <div class="chat-page__user user-chat">
+                            <a href="#" class="user-chat__icon"><img src="img/user-chat-icon.svg" alt="user icon"></a>
+                            <a href="#" class="user-chat__name">Твоя Незнакомка</a>
+                            <div class="user-tape__status"><span>Online</span></div>
+                        </div>
+                        <a href="#" class="chat-page__btn btn">
+                            Закончить Чат
+                        </a>
+                        <a href="#" class="chat-page__btn chat-page__btn--m btn"><span><img src="img/close.svg" alt=""></span></a>
                     </div>
-                    <a href="#" class="chat-page__btn btn">
-                        Закончить Чат
-                    </a>
-                    <a href="#" class="chat-page__btn chat-page__btn--m btn"><span><img src="img/close.svg" alt=""></span></a>
-                </div>
-                <div class="chat-page__body">
-                    <div class="chat-page__messages">
-                        <div class="chat-page__message interlocutor-message">
-                            <div class="chat-page__message-items">
-                                <div class="chat-page__message-content interlocutor-message__content">
-                                    <a href="#" class="interlocutor-message__icon">
-                                        <img src="img/user-chat-icon.svg" alt="user icon">
-                                    </a>
-                                    <div class="message interlocutor-message__text">
-                                        Привет! Как себя чувствуешь, красавчик? Может пошалим?
+                    <div class="chat-page__body">
+                        <div class="chat-page__messages">
+                            <div class="chat-page__message interlocutor-message">
+                                <div class="chat-page__message-items">
+                                    <div class="chat-page__message-content interlocutor-message__content">
+                                        <a href="#" class="interlocutor-message__icon">
+                                            <img src="img/user-chat-icon.svg" alt="user icon">
+                                        </a>
+                                        <div class="message interlocutor-message__text">
+                                            Привет! Как себя чувствуешь, красавчик? Может пошалим?
+                                        </div>
                                     </div>
+                                    <div class="interlocutor-message__attached">
+                                        <div class="attached-image interlocutor-message__image"><img src="img/chat-image.jpg" alt=""></div>
+                                    </div>
+                                    <div class="chat-page__date interlocutor-message__date">8:00 PM</div>
                                 </div>
-                                <!-- <div class="interlocutor-message__attached">
-                                    <div class="attached-image interlocutor-message__image"><img src="img/chat-image.jpg" alt=""></div>
-                                </div> -->
-                                <div class="chat-page__date interlocutor-message__date">8:00 PM</div>
+                            </div>
+                            <div class="chat-page__message user-message">
+                                <div class="chat-page__message-items">
+                                    <div class="chat-page__message-content user-message__content">
+                                        <a href="#" class="user-message__icon">
+                                            <img src="img/user-chat-icon-2.svg" alt="user icon">
+                                        </a>
+                                        <div class="message user-message__text">Привет! Как делишки?</div>
+                                    </div>
+                                    <div class="user-message__attached">
+                                        <div class="attached-image user-message__image"><img src="img/chat-image.jpg" alt=""></div>
+                                    </div>
+                                    <div class="chat-page__date user-message__date">20 апреля 2020 01:13</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="chat-page__message user-message">
-                            <div class="chat-page__message-items">
-                                <div class="chat-page__message-content user-message__content">
-                                    <a href="#" class="user-message__icon">
-                                        <img src="img/user-chat-icon-2.svg" alt="user icon">
-                                    </a>
-                                    <div class="message user-message__text">Привет! Как делишки?</div>
-                                </div>
-                                <div class="user-message__attached">
-                                    <div class="attached-image user-message__image"><img src="img/chat-image.jpg" alt=""></div>
-                                </div>
-                                <div class="chat-page__date user-message__date">20 апреля 2020 01:13</div>
+                        <form action="#" class="chat-page__send">
+                            <!-- кнопка открытия панели смайлов -->
+                            <button type="button" id="btn">
+                              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
+                                />
+                              </svg>
+                            </button>
+                            
+                            <!-- блок для панели ввода -->
+                            <div id="input-box"></div>
+                            
+                            <button class="chat-page__button btn">Отправить</button>
+                            <button class="chat-page__button chat-page__button--m btn"><span><img src="img/send.svg" alt=""></span></button>
+                            <div class="chat-page__file">
+                                <input type="file">
                             </div>
-                        </div>
+                            <!-- блок для панели смайлов-->
+                            <div id="emoji-box"></div>
+                          </form>
                     </div>
-                    <form action="#" class="chat-page__send">
-                        <!-- кнопка открытия панели смайлов -->
-                        <button type="button" id="btn">
-                          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
-                            />
-                          </svg>
-                        </button>
-                        
-                        <!-- блок для панели ввода -->
-                        <div id="input-box"></div>
-                        
-                        <button class="chat-page__button btn">Отправить</button>
-                        <button class="chat-page__button chat-page__button--m btn"><span><img src="img/send.svg" alt=""></span></button>
-                        <div class="chat-page__file">
-                            <input type="file">
-                        </div>
-                        <!-- блок для панели смайлов-->
-                        <div id="emoji-box"></div>
-                      </form>
                 </div>
             </div>
         </div>
-
     </main>
     <footer class="footer">
         <div class="container">
