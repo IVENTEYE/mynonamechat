@@ -82,6 +82,12 @@ form {
 #input-box #input-box-field:focus {
     outline: 0;
 }
+
+#input-box #input-box-field:not(:empty) {
+    top: 0;
+    transform: translate(0,0);
+}
+
 #input-box #input-box-field:not(:empty) ~ #input-box-placeholder {
     display: none;
 }
