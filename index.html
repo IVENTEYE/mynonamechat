@@ -78,42 +78,52 @@
                         <div class="page-tape__slider page-tape__item">
                             <div class="owl-carousel">
                                 <div class="page-tape__card">
-                                    <div class="page-tape__emoji"><img src="img/card-emoji-01.svg" alt="Emoji"></div>
-                                    <div class="page-tape__user user-tape">
-                                        <a href="#" class="user-tape__name">@Alex</a>
-                                        <div class="user-tape__status"><span>Online</span></div>
-                                    </div>
-                                    <div class="page-tape__comment">
-                                        Хочу найти свою любовь
-                                    </div>
+                                    <a href="#" class="page-tape__card-link">
+                                        <div class="page-tape__emoji"><img src="img/card-emoji-01.svg" alt="Emoji">
+                                        </div>
+                                        <div class="page-tape__user user-tape">
+                                            <div class="user-tape__name">@Alex</div>
+                                            <div class="user-tape__status"><span>Online</span></div>
+                                        </div>
+                                        <div class="page-tape__comment">
+                                            Хочу найти свою любовь
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="page-tape__card">
-                                    <div class="page-tape__emoji"><img src="img/card-emoji-02.svg" alt="Emoji"></div>
-                                    <div class="page-tape__user user-tape">
-                                        <a href="#" class="user-tape__name">@Серега</a>
-                                    </div>
-                                    <div class="page-tape__comment">
-                                        Ну где же вы, сладкие девочки
-                                    </div>
+                                    <a href="#" class="page-tape__card-link">
+                                        <div class="page-tape__emoji"><img src="img/card-emoji-02.svg" alt="Emoji">
+                                        </div>
+                                        <div class="page-tape__user user-tape">
+                                            <div class="user-tape__name">@Серега</div>
+                                        </div>
+                                        <div class="page-tape__comment">
+                                            Ну где же вы, сладкие девочки
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="page-tape__card">
-                                    <div class="page-tape__emoji"><img src="img/card-emoji-03.svg" alt="Emoji"></div>
-                                    <div class="page-tape__user user-tape">
-                                        <a href="#" class="user-tape__name">@Света</a>
-                                        <div class="user-tape__status"><span>Online</span></div>
-                                    </div>
-                                    <div class="page-tape__comment">
-                                        Найти бы здесь папика
-                                    </div>
+                                    <a href="#" class="page-tape__card-link">
+                                        <div class="page-tape__emoji"><img src="img/card-emoji-03.svg" alt="Emoji">
+                                        </div>
+                                        <div class="page-tape__user user-tape">
+                                            <div class="user-tape__name">@Серега</div>
+                                        </div>
+                                        <div class="page-tape__comment">
+                                            Найти бы здесь папика
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="page-tape__card">
-                                    <div class="page-tape__user user-tape">
-                                        <a href="#" class="user-tape__name">@Андрей</a>
-                                    </div>
-                                    <div class="page-tape__comment">
-                                        Ищу себе ту, которая
-                                        изменит мою жизнь
-                                    </div>
+                                    <a href="#" class="page-tape__card-link">
+                                        <div class="page-tape__user user-tape">
+                                            <div class="user-tape__name">@Андрей</div>
+                                        </div>
+                                        <div class="page-tape__comment">
+                                            Ищу себе ту, которая
+                                            изменит мою жизнь
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -211,11 +221,11 @@
                 </div>
             </div>
         </div>
-            
+
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer__items items-footer">
+            <div class="footer__items items-footer" data-da="header__menu-body,last,420">
                 <ul class="items-footer__list">
                     <li><a href="#" class="items-footer__link">О нас</a></li>
                     <li><a href="#" class="items-footer__link">Условия</a></li>
@@ -233,84 +243,84 @@
     <div class="popup" id="popup">
         <div class="popup__body">
             <div class="popup__content">
-                    <!--   Svg иконка для закрытия окна  -->
-                    <div class="modal__cross js-modal-close"></div>
-                    <div class="text__modal">
-                        <h3 class="vip__modal">СТАТЬ VIP</h3>
-                        <p class="vip__user">Как VIP пользователь, вы будете видны всем на главной странице, даже
-                            когда вы оффлайн. Любой желающий сможет перейти в личный чат с вами.</p>
-                        <form class="modal__emodzi">
-                            <label class="model__fire">
-                                <div class="vip__fire">🔥</div>
-                                <input type="radio" name="gender">
-                                <div class="emo__active"></div>
-                            </label>
-                            <label class="modal__strawberry">
-                                <div class="vip__strawberry">🍓</div>
-                                <input type="radio" name="gender">
-                                <div class="emo__active"></div>
-                            </label>
-                            <label class="modal__persik">
-                                <div class="vip__persik">🍑</div>
-                                <input type="radio" name="gender">
-                                <div class="emo__active"></div>
-                            </label>
-                            <label class="modal__search">
-                                <div class="vip__search">🔎</div>
-                                <input type="radio" name="gender">
-                                <div class="emo__active"></div>
-                            </label>
-                            <label class="modal__stop">
-                                <div class="vip__stop">⛔️</div>
-                                <input type="radio" name="gender">
-                                <div class="emo__active"></div>
-                            </label>
-                            <label class="modal__corona">
-                                <div class="vip__corona">👑</div>
-                                <input type="radio" name="gender">
-                                <div class="emo__active"></div>
-                            </label>
-                        </form>
+                <!--   Svg иконка для закрытия окна  -->
+                <div class="modal__cross js-modal-close"></div>
+                <div class="text__modal">
+                    <h3 class="vip__modal">СТАТЬ VIP</h3>
+                    <p class="vip__user">Как VIP пользователь, вы будете видны всем на главной странице, даже
+                        когда вы оффлайн. Любой желающий сможет перейти в личный чат с вами.</p>
+                    <form class="modal__emodzi">
+                        <label class="model__fire">
+                            <div class="vip__fire">🔥</div>
+                            <input type="radio" name="gender">
+                            <div class="emo__active"></div>
+                        </label>
+                        <label class="modal__strawberry">
+                            <div class="vip__strawberry">🍓</div>
+                            <input type="radio" name="gender">
+                            <div class="emo__active"></div>
+                        </label>
+                        <label class="modal__persik">
+                            <div class="vip__persik">🍑</div>
+                            <input type="radio" name="gender">
+                            <div class="emo__active"></div>
+                        </label>
+                        <label class="modal__search">
+                            <div class="vip__search">🔎</div>
+                            <input type="radio" name="gender">
+                            <div class="emo__active"></div>
+                        </label>
+                        <label class="modal__stop">
+                            <div class="vip__stop">⛔️</div>
+                            <input type="radio" name="gender">
+                            <div class="emo__active"></div>
+                        </label>
+                        <label class="modal__corona">
+                            <div class="vip__corona">👑</div>
+                            <input type="radio" name="gender">
+                            <div class="emo__active"></div>
+                        </label>
+                    </form>
 
-                        <form class="modal__form">
-                            <input class="about" type="text" placeholder="О вас">
-                        </form>
-                        <p class="vip__tagline">Введите пару слов о себе, чтобы привлечь собеседников</p>
-                        <div class="radio" data-ng-app="app">
-                            <p class="text__radio">Мой никнейм, аватар или поле «О вас» имеют интимный или
-                                непристойный характер</p>
-                            <input type="checkbox" id="switch"><label class="switch" for="switch">Toggle</label>
-                        </div>
-                        <div class="bottom__modal-text">
-                            <h3 class="vip__rules">Обратите внимание</h3>
-                            <p class="vip__rules-text">Контент интимного или непристойного характера запрещён в аватаре,
-                                никнейме и поле «О вас», если вы не пометили аккаунт как содержащий перечисленное.
-                                За нарушение данного правила вы можете лишиться статуса VIP без возврата
-                                средств или получить бан аккаунта.</p>
-                            <p class="vip__rules-text">Контент с рекламой, намёком на платные услуги или упоминанием
-                                сторонних  сервисов (телефонные номера, приглашения в другие мессенджеры и т.д.)
-                                карается  вечным баном аккаунта без возврата средств и без объяснения причин.</p>
-                        </div>
-                        <div class="vip__price">
-                            <a class="card__price" href="#">
-                                <h4 class="become__vip">СТАТЬ VIP</h4>
-                                <p class="hour">на 24 часа</p>
-                                <p class="money">💰 99 руб.</p>
-                            </a>
-                            <a class="card__price" href="#">
-                                <p class="discount">-15%</p>
-                                <h4 class="become__vip">СТАТЬ VIP</h4>
-                                <p class="hour">на 7 дней</p>
-                                <p class="money">💰 559 руб.</p>
-                            </a>
-                            <a class="card__price" href="#">
-                                <p class="discount">-20%</p>
-                                <h4 class="become__vip">СТАТЬ VIP</h4>
-                                <p class="hour">на 30 дней</p>
-                                <p class="money">💰 2099 руб.</p>
-                            </a>
-                        </div>
+                    <form class="modal__form">
+                        <input class="about" type="text" placeholder="О вас">
+                    </form>
+                    <p class="vip__tagline">Введите пару слов о себе, чтобы привлечь собеседников</p>
+                    <div class="radio" data-ng-app="app">
+                        <p class="text__radio">Мой никнейм, аватар или поле «О вас» имеют интимный или
+                            непристойный характер</p>
+                        <input type="checkbox" id="switch"><label class="switch" for="switch">Toggle</label>
                     </div>
+                    <div class="bottom__modal-text">
+                        <h3 class="vip__rules">Обратите внимание</h3>
+                        <p class="vip__rules-text">Контент интимного или непристойного характера запрещён в аватаре,
+                            никнейме и поле «О вас», если вы не пометили аккаунт как содержащий перечисленное.
+                            За нарушение данного правила вы можете лишиться статуса VIP без возврата
+                            средств или получить бан аккаунта.</p>
+                        <p class="vip__rules-text">Контент с рекламой, намёком на платные услуги или упоминанием
+                            сторонних сервисов (телефонные номера, приглашения в другие мессенджеры и т.д.)
+                            карается вечным баном аккаунта без возврата средств и без объяснения причин.</p>
+                    </div>
+                    <div class="vip__price">
+                        <a class="card__price" href="#">
+                            <h4 class="become__vip">СТАТЬ VIP</h4>
+                            <p class="hour">на 24 часа</p>
+                            <p class="money">💰 99 руб.</p>
+                        </a>
+                        <a class="card__price" href="#">
+                            <p class="discount">-15%</p>
+                            <h4 class="become__vip">СТАТЬ VIP</h4>
+                            <p class="hour">на 7 дней</p>
+                            <p class="money">💰 559 руб.</p>
+                        </a>
+                        <a class="card__price" href="#">
+                            <p class="discount">-20%</p>
+                            <h4 class="become__vip">СТАТЬ VIP</h4>
+                            <p class="hour">на 30 дней</p>
+                            <p class="money">💰 2099 руб.</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

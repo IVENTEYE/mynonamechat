@@ -125,6 +125,7 @@ form {
 #emoji-box {
     pointer-events: none;
     position: absolute;
+    top: -58px;
     width: 100%;
     margin-top: 0.5rem;
     visibility: hidden;
@@ -147,8 +148,9 @@ form {
     border-width: 0 0.5rem 0.75rem 0.5rem;
     border-color: transparent transparent #f9f9f9 transparent;
     content: "";
-    top: -0.45rem;
-    left: 0.25rem;
+    right: 28%;
+    bottom: -12px;
+    transform: rotate(180deg);
 }
 #emoji-box div {
     user-select: none;
