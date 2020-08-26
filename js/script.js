@@ -135,13 +135,6 @@ const menu = document.querySelector('.header__menu-burger'),
 	closeSettingsButton = document.querySelector('.page-content__button'),
 	settingsCard = document.querySelector('.chat-welcome');
 
-const headerScroll = () => {
-	if (window.pageYOffset > 80) {
-		header.classList.add('fixed');
-	} else {
-		header.classList.remove('fixed');
-	}
-};
 
 const select = function () {
 	const selectHeader = document.querySelectorAll('.select-header'),
@@ -198,8 +191,6 @@ document.addEventListener('click', (e) => {
 	}
 });
 
-window.addEventListener('scroll', headerScroll);
-
 const hoodContent = document.querySelector('.hood-content'),
 	emojiMove = document.querySelectorAll('.items-dynamic__item');
 
@@ -237,7 +228,7 @@ function myFunction(x) {
 	}
 }
 
-let x = window.matchMedia("(max-width: 420px)")
+let x = window.matchMedia("(max-width: 500px)")
 myFunction(x) // Вызов функции прослушивателя во время выполнения
 x.addListener(myFunction);
 
