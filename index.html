@@ -14,232 +14,233 @@
 </head>
 
 <body>
-    <div id="preloader-body" class="no-scroll-y">
-        <!-- Preloader -->
-        <section>
-            <div id="preloader">
-                <div id="ctn-preloader" class="ctn-preloader">
-                    <div class="animation-preloader">
-
-                        <div id="loader"></div>
-
+    <div class="wrapper">
+        <div id="preloader-body" class="no-scroll-y">
+            <!-- Preloader -->
+            <section>
+                <div id="preloader">
+                    <div id="ctn-preloader" class="ctn-preloader">
+                        <div class="animation-preloader">
+    
+                            <div id="loader"></div>
+    
+                        </div>
+    
+                        <!-- Preloader sides - Model 1 -->
+                        <div class="loader-section section-left"></div>
+                        <div class="loader-section section-right"></div>
+    
                     </div>
-
-                    <!-- Preloader sides - Model 1 -->
-                    <div class="loader-section section-left"></div>
-                    <div class="loader-section section-right"></div>
-
+                </div>
+            </section>
+        </div>
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__row">
+                    <div class="header__logo">
+                        <a href="#"><img src="img/logo.svg" alt="NoNameChat"></a>
+                    </div>
+                    <div class="header__menu">
+                        <div class="header__menu-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="header__menu-body"></div>
+                    </div>
+                    <div class="header__online" data-da="header__menu-body,1,992">
+                        Онлайн: <span>1245</span> (<span class="emoji-1">245</span>, <span class="emoji-2">1000</span>)
+                    </div>
+                    <div class="header__buttons buttons-header" data-da="header__menu-body,2,992">
+                        <a href="form.html" class="buttons-header__start btn">Начать Бесплатно</a>
+                        <a href="#" class="buttons-header__login">Войти</a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </header>
+        <main class="page">
+            <div class="page__container container">
+                <div class="page-tape">
+                    <div class="page-tape__header header-tape">
+                        <div class="header-tape__vip">
+                            <a href="#"><span>VIP</span> размещение</a>
+                        </div>
+                        <div class="header-tape__all">
+                            <a href="#">Все объявления</a>
+                        </div>
+                    </div>
+                    <div class="page-tape__body">
+                        <div class="page-tape__row">
+                            <div class="page-tape__item">
+                                <a href="#popup" class="page-tape__add">
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="page-tape__slider page-tape__item">
+                                <div class="owl-carousel">
+                                    <div class="page-tape__card">
+                                        <a href="#" class="page-tape__card-link">
+                                            <div class="page-tape__emoji"><img src="img/card-emoji-01.svg" alt="Emoji">
+                                            </div>
+                                            <div class="page-tape__user user-tape">
+                                                <div class="user-tape__name">@Alex</div>
+                                                <div class="user-tape__status"><span>Online</span></div>
+                                            </div>
+                                            <div class="page-tape__comment">
+                                                Хочу найти свою любовь
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="page-tape__card">
+                                        <a href="#" class="page-tape__card-link">
+                                            <div class="page-tape__emoji"><img src="img/card-emoji-02.svg" alt="Emoji">
+                                            </div>
+                                            <div class="page-tape__user user-tape">
+                                                <div class="user-tape__name">@Серега</div>
+                                            </div>
+                                            <div class="page-tape__comment">
+                                                Ну где же вы, сладкие девочки
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="page-tape__card">
+                                        <a href="#" class="page-tape__card-link">
+                                            <div class="page-tape__emoji"><img src="img/card-emoji-03.svg" alt="Emoji">
+                                            </div>
+                                            <div class="page-tape__user user-tape">
+                                                <div class="user-tape__name">@Света</div>
+                                                <div class="user-tape__status"><span>Online</span></div>
+                                            </div>
+                                            <div class="page-tape__comment">
+                                                Найти бы здесь папика
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="page-tape__card">
+                                        <a href="#" class="page-tape__card-link">
+                                            <div class="page-tape__user user-tape">
+                                                <div class="user-tape__name">@Андрей</div>
+                                            </div>
+                                            <div class="page-tape__comment">
+                                                Ищу себе ту, которая
+                                                изменит мою жизнь
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="page-content__row">
+                        <div class="page-content__column">
+                            <div class="page-content__items">
+                                <div class="page-content__welcome">
+                                    <div class="page-content__chat chat-welcome">
+                                        <div class="page-content__filter">
+                                            <button class="page-content__button">
+                                                <i class="page-content__button-close"></i>
+                                            </button>
+                                            <form class="chat-opros">
+                                                <h4 class="gender">Пол</h4>
+                                                <div class="gender__opros">
+                                                    <label class="gender__item">
+                                                        <p class="gender__emodzi">👻</p>
+                                                        <input type="radio" name="gender">
+                                                        <div class="gender__active"></div>
+                                                        <p class="gender__person">Любой</p>
+                                                    </label>
+                                                    <label class="gender__item">
+                                                        <p class="gender__emodzi">👨</p>
+                                                        <input type="radio" name="gender">
+                                                        <div class="gender__active"></div>
+                                                        <p class="gender__person">Муж.</p>
+                                                    </label>
+                                                    <label class="gender__item">
+                                                        <p class="gender__emodzi">👩</p>
+                                                        <input type="radio" name="gender">
+                                                        <div class="gender__active"></div>
+                                                        <p class="gender__person">Жен.</p>
+                                                    </label>
+                                                </div>
+    
+                                                <h4 class="age">Возраст</h4>
+                                                <div class="range__slider">
+                                                    <input type="text" id="example_id" name="example_name" value="" />
+                                                    <button class="gender__btn">Найти собеседника</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="page-content__block">
+                                        <div class="page-content__settings">
+                                            <img src="img/settings.svg" alt="Settings">
+                                        </div>
+                                        <div class="page-content__title">Анонимный онлайн чат</div>
+                                        <div class="page-content__buttons buttons-content">
+                                            <a href="chat.html" class="buttons-content__start btn">Начать Чат</a>
+                                            <div class="select">
+                                                <div class="select-header">
+                                                    <div class="select-header__current"> Я - <span
+                                                            class="current__icon"></span></div>
+                                                    <div class="select-header__icon"><img src="img/select-icon.svg"
+                                                            alt="Arrow"></div>
+                                                </div>
+                                                <div class="select-body">
+                                                    <div class="select-body__item">Я - <span class="girl"></span></div>
+                                                    <div class="select-body__item">Я - <span class="man"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="page-content__facts">
+                                            <li class="page-content__fact">Горячая аудитория</li>
+                                            <li class="page-content__fact">Поиск по полу и возрасту</li>
+                                            <li class="page-content__fact">Просмотр фото без ограничений</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content__column">
+                            <div class="page-content__hood hood-content">
+                                <div class="hood-content__items items-hood">
+                                    <div class="items-hood__title">Пошлый чат</div>
+                                    <div class="items-hood__text">
+                                        Ex ullamco sit occaecat dolor laborum qui id reprehenderit reprehenderit ipsum
+                                        aliqua nulla. Qui culpa in cillum enim in culpa dolor qui.
+                                    </div>
+                                    <a href="#" class="items-hood__start">Войти</a>
+                                </div>
+                                <div class="hood-content__dynamic-items items-dynamic">
+                                    <div class="items-dynamic__item"><img src="img/hood-01.svg" alt="Emoji"></div>
+                                    <div class="items-dynamic__item"><img src="img/hood-02.svg" alt="Emoji"></div>
+                                    <div class="items-dynamic__item"><img src="img/hood-02.svg" alt="Emoji"></div>
+                                    <div class="items-dynamic__item"><img src="img/hood-03.svg" alt="Emoji"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__items items-footer" data-da="header__menu-body,last,420">
+                    <ul class="items-footer__list">
+                        <li><a href="#" class="items-footer__link">О нас</a></li>
+                        <li><a href="#" class="items-footer__link">Условия</a></li>
+                        <li><a href="#" class="items-footer__link">Конфиденциальность</a></li>
+                        <li><a href="#" class="items-footer__link">Города</a></li>
+                        <li><a href="#" class="items-footer__link">Помощь</a></li>
+                        <li><a href="#" class="items-footer__link">Пресса</a></li>
+                    </ul>
+                    <div class="items-footer__copyrighted">2020 © NoNameChat</div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <header class="header">
-        <div class="header__container container">
-            <div class="header__row">
-                <div class="header__logo">
-                    <a href="#"><img src="img/logo.svg" alt="NoNameChat"></a>
-                </div>
-                <div class="header__menu">
-                    <div class="header__menu-burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="header__menu-body"></div>
-                </div>
-                <div class="header__online" data-da="header__menu-body,1,992">
-                    Онлайн: <span>1245</span> (<span class="emoji-1">245</span>, <span class="emoji-2">1000</span>)
-                </div>
-                <div class="header__buttons buttons-header" data-da="header__menu-body,2,992">
-                    <a href="form.html" class="buttons-header__start btn">Начать Бесплатно</a>
-                    <a href="#" class="buttons-header__login">Войти</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="page">
-        <div class="page__container container">
-            <div class="page-tape">
-                <div class="page-tape__header header-tape">
-                    <div class="header-tape__vip">
-                        <a href="#"><span>VIP</span> размещение</a>
-                    </div>
-                    <div class="header-tape__all">
-                        <a href="#">Все объявления</a>
-                    </div>
-                </div>
-                <div class="page-tape__body">
-                    <div class="page-tape__row">
-                        <div class="page-tape__item">
-                            <a href="#popup" class="page-tape__add">
-                                <span></span>
-                            </a>
-                        </div>
-                        <div class="page-tape__slider page-tape__item">
-                            <div class="owl-carousel">
-                                <div class="page-tape__card">
-                                    <a href="#" class="page-tape__card-link">
-                                        <div class="page-tape__emoji"><img src="img/card-emoji-01.svg" alt="Emoji">
-                                        </div>
-                                        <div class="page-tape__user user-tape">
-                                            <div class="user-tape__name">@Alex</div>
-                                            <div class="user-tape__status"><span>Online</span></div>
-                                        </div>
-                                        <div class="page-tape__comment">
-                                            Хочу найти свою любовь
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-tape__card">
-                                    <a href="#" class="page-tape__card-link">
-                                        <div class="page-tape__emoji"><img src="img/card-emoji-02.svg" alt="Emoji">
-                                        </div>
-                                        <div class="page-tape__user user-tape">
-                                            <div class="user-tape__name">@Серега</div>
-                                        </div>
-                                        <div class="page-tape__comment">
-                                            Ну где же вы, сладкие девочки
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-tape__card">
-                                    <a href="#" class="page-tape__card-link">
-                                        <div class="page-tape__emoji"><img src="img/card-emoji-03.svg" alt="Emoji">
-                                        </div>
-                                        <div class="page-tape__user user-tape">
-                                            <div class="user-tape__name">@Света</div>
-                                            <div class="user-tape__status"><span>Online</span></div>
-                                        </div>
-                                        <div class="page-tape__comment">
-                                            Найти бы здесь папика
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-tape__card">
-                                    <a href="#" class="page-tape__card-link">
-                                        <div class="page-tape__user user-tape">
-                                            <div class="user-tape__name">@Андрей</div>
-                                        </div>
-                                        <div class="page-tape__comment">
-                                            Ищу себе ту, которая
-                                            изменит мою жизнь
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="page-content">
-                <div class="page-content__row">
-                    <div class="page-content__column">
-                        <div class="page-content__items">
-                            <div class="page-content__welcome">
-                                <div class="page-content__chat chat-welcome">
-                                    <div class="page-content__filter">
-                                        <button class="page-content__button">
-                                            <i class="page-content__button-close"></i>
-                                        </button>
-                                        <form class="chat-opros">
-                                            <h4 class="gender">Пол</h4>
-                                            <div class="gender__opros">
-                                                <label class="gender__item">
-                                                    <p class="gender__emodzi">👻</p>
-                                                    <input type="radio" name="gender">
-                                                    <div class="gender__active"></div>
-                                                    <p class="gender__person">Любой</p>
-                                                </label>
-                                                <label class="gender__item">
-                                                    <p class="gender__emodzi">👨</p>
-                                                    <input type="radio" name="gender">
-                                                    <div class="gender__active"></div>
-                                                    <p class="gender__person">Муж.</p>
-                                                </label>
-                                                <label class="gender__item">
-                                                    <p class="gender__emodzi">👩</p>
-                                                    <input type="radio" name="gender">
-                                                    <div class="gender__active"></div>
-                                                    <p class="gender__person">Жен.</p>
-                                                </label>
-                                            </div>
-
-                                            <h4 class="age">Возраст</h4>
-                                            <div class="range__slider">
-                                                <input type="text" id="example_id" name="example_name" value="" />
-                                                <button class="gender__btn">Найти собеседника</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="page-content__block">
-                                    <div class="page-content__settings">
-                                        <img src="img/settings.svg" alt="Settings">
-                                    </div>
-                                    <div class="page-content__title">Анонимный онлайн чат</div>
-                                    <div class="page-content__buttons buttons-content">
-                                        <a href="chat.html" class="buttons-content__start btn">Начать Чат</a>
-                                        <div class="select">
-                                            <div class="select-header">
-                                                <div class="select-header__current"> Я - <span
-                                                        class="current__icon"></span></div>
-                                                <div class="select-header__icon"><img src="img/select-icon.svg"
-                                                        alt="Arrow"></div>
-                                            </div>
-                                            <div class="select-body">
-                                                <div class="select-body__item">Я - <span class="girl"></span></div>
-                                                <div class="select-body__item">Я - <span class="man"></span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <ul class="page-content__facts">
-                                        <li class="page-content__fact">Горячая аудитория</li>
-                                        <li class="page-content__fact">Поиск по полу и возрасту</li>
-                                        <li class="page-content__fact">Просмотр фото без ограничений</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="page-content__column">
-                        <div class="page-content__hood hood-content">
-                            <div class="hood-content__items items-hood">
-                                <div class="items-hood__title">Пошлый чат</div>
-                                <div class="items-hood__text">
-                                    Ex ullamco sit occaecat dolor laborum qui id reprehenderit reprehenderit ipsum
-                                    aliqua nulla. Qui culpa in cillum enim in culpa dolor qui.
-                                </div>
-                                <a href="#" class="items-hood__start">Войти</a>
-                            </div>
-                            <div class="hood-content__dynamic-items items-dynamic">
-                                <div class="items-dynamic__item"><img src="img/hood-01.svg" alt="Emoji"></div>
-                                <div class="items-dynamic__item"><img src="img/hood-02.svg" alt="Emoji"></div>
-                                <div class="items-dynamic__item"><img src="img/hood-02.svg" alt="Emoji"></div>
-                                <div class="items-dynamic__item"><img src="img/hood-03.svg" alt="Emoji"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__items items-footer" data-da="header__menu-body,last,420">
-                <ul class="items-footer__list">
-                    <li><a href="#" class="items-footer__link">О нас</a></li>
-                    <li><a href="#" class="items-footer__link">Условия</a></li>
-                    <li><a href="#" class="items-footer__link">Конфиденциальность</a></li>
-                    <li><a href="#" class="items-footer__link">Города</a></li>
-                    <li><a href="#" class="items-footer__link">Помощь</a></li>
-                    <li><a href="#" class="items-footer__link">Пресса</a></li>
-                </ul>
-                <div class="items-footer__copyrighted">2020 © NoNameChat</div>
-            </div>
-        </div>
-    </footer>
-
     <!-- Popup -->
     <div class="popup" id="popup">
         <div class="popup__body">
