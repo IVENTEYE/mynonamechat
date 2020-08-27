@@ -762,3 +762,33 @@ if (document.querySelector('.chat-page__send')) {
 	$(".submit").click(function(){
 		return false;
 	});
+
+const openImg = document.querySelectorAll('.interlocutor-message__image-btn'),
+	  vipCard = document.querySelectorAll('.vip-image');
+
+openImg.forEach( item => {
+	item.addEventListener('click', (e) => {
+		e.preventDefault();
+		if (e.target) {
+			vipCard.forEach(el => {
+				el.classList.add('active');
+				document.querySelectorAll('.vip-image__close').forEach(close => {
+					close.addEventListener('click', () => {
+						el.classList.remove('active');
+						document.querySelectorAll('.interlocutor-message__image img').forEach( i => {
+							i.style.filter = 'blur(12px)';
+						});
+					});
+				});
+				setTimeout(function () {
+					if (el.classList.contains('active')) {
+						document.querySelectorAll('.interlocutor-message__image img').forEach( i => {
+							i.style.filter = 'blur(0px)';
+						});
+					}
+				}, 140);
+
+			});
+		}
+	});
+});
