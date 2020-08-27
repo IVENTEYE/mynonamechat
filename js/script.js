@@ -792,3 +792,24 @@ openImg.forEach( item => {
 		}
 	});
 });
+
+const popupSpoilHead = document.querySelector('.spoil-modal__header');
+
+if (popupSpoilHead) {
+	popupSpoilHead.addEventListener('click', () => {
+		popupSpoilHead.classList.toggle('active');
+		$('.spoil-modal__body').slideToggle(300);
+	});
+}
+
+setTimeout(function() {
+    $('#ctn-preloader-chat').addClass('loaded');
+
+    if ($('#ctn-preloader-chat').hasClass('loaded')) {
+     
+      $('.ctn-preloader-chat').queue(function() {
+		$(this).addClass('unloaded');
+      });
+    }
+  }, 2000);
+
