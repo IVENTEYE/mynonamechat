@@ -710,9 +710,12 @@ if (document.querySelector('.chat-page__send')) {
 				opacity = 1 - now;
 				current_fs.css({
 	        'transform': 'scale('+scale+')',
-	        'position': 'relative'
+			'position': 'relative',
+			'visibility': 'visible',
+			'position': 'relative',
+			'transform': 'scale(1)'
 	      });
-				next_fs.css({'left': left, 'opacity': opacity});
+				next_fs.css({'left': left, 'opacity': opacity, 'visibility': 'visible', 'position': 'relative', 'transform': 'scale(1)'});
 			}, 
 			duration: 0, 
 			complete: function(){
