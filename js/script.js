@@ -766,6 +766,22 @@ if (document.querySelector('.chat-page__send')) {
 		return false;
 	});
 
+	document.querySelector('.acca__link').addEventListener('click', (e) => {
+		e.preventDefault();
+		document.querySelector('#progressbar').style.transform = 'scale(0)';
+		document.querySelector('.fieldset__login').classList.add('active');
+		document.querySelectorAll('.fieldset').forEach(item => {
+			item.style.transform = 'scale(0)';
+		});
+		document.querySelector('.previous-log').addEventListener('click', () => {
+			document.querySelector('.fieldset__login').classList.remove('active');
+			document.querySelectorAll('.fieldset').forEach(item => {
+				item.style.transform = 'scale(1)';
+			});
+			document.querySelector('#progressbar').style.transform = 'scale(1)';
+		});
+	});
+
 const openImg = document.querySelectorAll('.interlocutor-message__image-btn'),
 	  vipCard = document.querySelectorAll('.vip-image');
 

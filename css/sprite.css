@@ -47,13 +47,14 @@ form {
 #input-box {
     cursor: text;
     position: relative;
-    overflow: auto;
+    overflow-y: auto;
     line-height: 1.5rem;
     background: #fafafa;
     border-radius: 12px;
     font-weight: 400;
     padding: 16px 30px;
     min-height: 72px;
+    overscroll-behavior: none;
 }
 
 #input-box::-webkit-scrollbar {
@@ -161,11 +162,7 @@ form {
 #emoji-box div {
     border-radius: 10px;
     user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
+    /* -webkit-touch-callout: none; */
     background-color: #f9f9f9;
     padding: 0 0.75rem;
     width: 100%;
