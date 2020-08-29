@@ -228,7 +228,7 @@ if (isiPhone) {
     function myFunction(x) {
 		if (x.matches) { // Если медиа запрос совпадает
 			if (document.querySelector('.chat-page__send')) {
-				inputBox.addEventListener('touchmove', function (e) {
+				document.querySelector('#input-box').addEventListener('touchmove', function (e) {
 					e.preventDefault();
 				});
 			}
@@ -236,7 +236,6 @@ if (isiPhone) {
 	}
 	
 	let x = window.matchMedia("(max-width: 500px)");
-	let inputBox = document.querySelector('#input-box');
 	myFunction(x); // Вызов функции прослушивателя во время выполнения
 	x.addListener(myFunction);
 } else {
