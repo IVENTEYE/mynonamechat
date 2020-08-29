@@ -131,7 +131,7 @@
 const menu = document.querySelector('.header__menu-burger'),
 	menuSide = document.querySelector('.header__menu-body'),
 	header = document.querySelector('.header'),
-	settingsButton = document.querySelector('.page-content__settings'),
+	settingsButton = document.querySelector('.page-content__settings img'),
 	closeSettingsButton = document.querySelector('.page-content__button'),
 	settingsCard = document.querySelector('.chat-welcome');
 
