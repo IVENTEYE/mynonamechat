@@ -55,6 +55,12 @@ form {
     padding: 16px 30px;
     min-height: 72px;
     overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.chat-page__send {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 #input-box::-webkit-scrollbar {
@@ -139,6 +145,8 @@ form {
     -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
     will-change: opacity, visibility;
     z-index: 10;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 #emoji-box.show {
@@ -169,6 +177,8 @@ form {
     height: 100%;
     overflow-y: auto;
     line-height: 0.25rem;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
 }
 #emoji-box div::before,
 #emoji-box div::after {
