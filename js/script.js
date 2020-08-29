@@ -220,17 +220,17 @@ document.body.onload = function () {
 	}, 500);
 };
 
-// function myFunction(x) {
-// 	if (x.matches) { // Если медиа запрос совпадает
-// 		document.body.addEventListener('touchmove', function (e) {
-// 			e.preventDefault();
-// 		});
-// 	}
-// }
+function myFunction(x) {
+	if (x.matches) { // Если медиа запрос совпадает
+		document.querySelector('#input-box').addEventListener('touchmove', function (e) {
+			e.preventDefault();
+		});
+	}
+}
 
-// let x = window.matchMedia("(max-width: 500px)")
-// myFunction(x) // Вызов функции прослушивателя во время выполнения
-// x.addListener(myFunction);
+let x = window.matchMedia("(max-width: 500px)")
+myFunction(x) // Вызов функции прослушивателя во время выполнения
+x.addListener(myFunction);
 
 $('.owl-carousel').owlCarousel({
 	margin: 20,
