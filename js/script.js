@@ -220,18 +220,27 @@ document.body.onload = function () {
 	}, 500);
 };
 
-if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+
+let isiPhone = (navigator.userAgent.match(/iPhone/i) != null);
+
+
+if (isiPhone) {
     function myFunction(x) {
 		if (x.matches) { // Если медиа запрос совпадает
-			document.querySelector('#input-box').addEventListener('touchmove', function (e) {
-				e.preventDefault();
-			});
+			if (inputBox) {
+				inputBox.addEventListener('touchmove', function (e) {
+					e.preventDefault();
+				});
+			}
 		}
 	}
 	
-	let x = window.matchMedia("(max-width: 500px)")
-	myFunction(x) // Вызов функции прослушивателя во время выполнения
+	let x = window.matchMedia("(max-width: 500px)");
+	let inputBox = document.querySelector('#input-box');
+	myFunction(x); // Вызов функции прослушивателя во время выполнения
 	x.addListener(myFunction);
+} else {
+	console.log(false);
 }
 
 $('.owl-carousel').owlCarousel({
