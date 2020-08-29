@@ -227,7 +227,7 @@ let isiPhone = (navigator.userAgent.match(/iPhone/i) != null);
 if (isiPhone) {
     function myFunction(x) {
 		if (x.matches) { // Если медиа запрос совпадает
-			if (inputBox) {
+			if (document.querySelector('.chat-page__send')) {
 				inputBox.addEventListener('touchmove', function (e) {
 					e.preventDefault();
 				});
