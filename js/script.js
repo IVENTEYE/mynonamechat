@@ -280,7 +280,7 @@ if (closeSettingsButton) {
 }
 
 
-const popupLinks = document.querySelectorAll('.page-tape__add'),
+const popupLinks = document.querySelectorAll('.js-modal'),
 	body = document.querySelector('body'),
 	lockPadding = document.querySelectorAll('.lock-padding'), // для фиксированных обьектов
 	timeout = 800;

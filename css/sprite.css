@@ -56,6 +56,7 @@ form {
     min-height: 72px;
     overscroll-behavior: none;
     -webkit-overflow-scrolling: touch;
+    box-shadow: 0 0 3px #292d32;
 }
 
 .chat-page__send {
