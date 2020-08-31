@@ -244,7 +244,7 @@ if (isiPhone) {
 
 $('.owl-carousel').owlCarousel({
 	margin: 20,
-	loop: true,
+	loop: false,
 	autoWidth: true,
 	dots: false,
 	nav: false,
