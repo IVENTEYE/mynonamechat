@@ -238,8 +238,6 @@ if (isiPhone) {
 	let x = window.matchMedia("(max-width: 500px)");
 	myFunction(x); // Вызов функции прослушивателя во время выполнения
 	x.addListener(myFunction);
-} else {
-	console.log(false);
 }
 
 $('.owl-carousel').owlCarousel({
@@ -776,6 +774,33 @@ if (document.querySelector('.chat-page__send')) {
 		return false;
 	});
 
+	const quizOne = document.querySelector('.quiz__one--google'),
+	      quizTwo = document.querySelector('.quiz__two--google')
+		  previousGoogle = document.querySelectorAll('.previous--google'),
+		  nextGoogle = document.querySelectorAll('.next--google');
+
+	document.querySelector('.link__google').addEventListener('click', () => {
+		quizOne.classList.add('active');
+	});
+
+	nextGoogle.forEach(item => {
+		item.addEventListener('click', (e) => {
+			if (e.target.closest('.quiz__one--google')) {
+				quizTwo.classList.add('active');
+			} 
+		});
+	});
+	
+	previousGoogle.forEach(item => {
+		item.addEventListener('click', (e) => {
+			if (e.target.closest('.quiz__one--google')) {
+				quizOne.classList.remove('active');
+			} else {
+				quizTwo.classList.remove('active');
+			}
+		});
+	});
+
 	if (document.querySelector('.acca__link')) {
 		document.querySelector('.acca__link').addEventListener('click', (e) => {
 			e.preventDefault();
@@ -843,4 +868,3 @@ setTimeout(function() {
       });
     }
   }, 2000);
-

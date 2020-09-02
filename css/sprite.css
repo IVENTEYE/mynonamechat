@@ -92,8 +92,9 @@ form {
 }
 
 #input-box #input-box-field:not(:empty) {
-    top: 0;
-    transform: translate(0,0);
+    /* top: 50%;
+    transform: translate(0,-50%); */
+    margin-top: 0;
 }
 
 #input-box #input-box-field:not(:empty) ~ #input-box-placeholder {
