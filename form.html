@@ -67,68 +67,9 @@
                         <div class="page__top-column">
                             <h2 class="reg">Рег./Вход через</h2>
                             <div class="seti__accaunt">
-                                <a class="link__google social-btn" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>GOOGLE</a>
+                                <a class="link__google social-btn js-modal" href="#popup_3"><i class="fa fa-google-plus" aria-hidden="true"></i>GOOGLE</a>
                                 <a class="link__vk social-btn" href="#"><i class="fa fa-vk" aria-hidden="true"></i>ВКОНТАКТЕ</a>
                                 <a class="link__apple social-btn" href="#"><i class="fa fa-apple" aria-hidden="true"></i>Войти через Apple</a>
-                            </div>
-                            <div class="quiz__one quiz__one--google">
-                                 <div class="chat-opros chat-opros__form">
-                                    <h4 class="gender-form">Ваш пол</h4>
-                                    <div class="gender__opros opros-gender">
-                                        <label class="gender__item">
-                                            <p class="gender__emodzi"><img src="img/settings-item-2.png" alt=""></p>
-                                            <input type="radio" name="gender">
-                                            <div class="gender__active"></div>
-                                            <p class="gender__person">Муж.</p>
-                                        </label>
-                                        <label class="gender__item">
-                                            <p class="gender__emodzi"><img src="img/settings-item-3.png" alt=""></p>
-                                            <input type="radio" name="gender">
-                                            <div class="gender__active"></div>
-                                            <p class="gender__person">Жен.</p>
-                                        </label>
-                                    </div>
-                                    <div class="google-form__buttons">
-                                        <input type="button" name="previous" class="previous--google previous-two action-button" value="НАЗАД" />
-                                        <input type="button" name="next" class="next--google next--google-gen action-button" value="ДАЛЕЕ" />
-                                     </div>
-                                 </div>
-                            </div>
-                            <div class="quiz__two quiz__two--google">
-                                <div class="chat-opros chat-opros__form">
-                                    <h4 class="gender-form">Ваш возраст</h4>
-                                    <div class="gender__opros gender__two">
-                                    <label class="gender__item gender__item-age">
-                                    <input type="radio" name="gender">
-                                    <div class="gender__active"></div>
-                                    <p class="gender__person">до 17</p>
-                                    </label>
-                                    <label class="gender__item gender__item-age">
-                                    <input type="radio" name="gender">
-                                    <div class="gender__active"></div>
-                                    <p class="gender__person">18-21</p>
-                                    </label>
-                                    <label class="gender__item gender__item-age">
-                                    <input type="radio" name="gender">
-                                    <div class="gender__active"></div>
-                                    <p class="gender__person">22-25</p>
-                                    </label>
-                                    <label class="gender__item gender__item-age">
-                                    <input type="radio" name="gender">
-                                    <div class="gender__active"></div>
-                                    <p class="gender__person">26-35</p>
-                                    </label>
-                                    <label class="gender__item gender__item-age">
-                                    <input type="radio" name="gender">
-                                    <div class="gender__active"></div>
-                                    <p class="gender__person">старше 36</p>
-                                    </label>
-                                    </div>
-                                 </div>
-                                 <div class="google-form__buttons">
-                                    <input type="button" name="previous" class="previous--google previous-two action-button" value="НАЗАД" />
-                                    <input type="button" name="next" class="next--google next--google-gen action-button" value="ДАЛЕЕ" />
-                                 </div>
                             </div>
                         </div>
         
@@ -367,6 +308,68 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="popup" id="popup_3">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="modal__cross js-modal-close"></div>
+                <div class="quiz__one quiz__one--google">
+                    <div class="chat-opros chat-opros__form">
+                       <h4 class="gender-form">Ваш пол</h4>
+                       <div class="gender__opros opros-gender">
+                           <label class="gender__item" id="gender">
+                               <p class="gender__emodzi"><img src="img/settings-item-2.png" alt=""></p>
+                               <input type="radio" name="gender">
+                               <div class="gender__active"></div>
+                               <p class="gender__person">Муж.</p>
+                           </label>
+                           <label class="gender__item" id="gender">
+                               <p class="gender__emodzi"><img src="img/settings-item-3.png" alt=""></p>
+                               <input type="radio" name="gender">
+                               <div class="gender__active"></div>
+                               <p class="gender__person">Жен.</p>
+                           </label>
+                       </div>
+                    </div>
+               </div>
+               <div class="quiz__two quiz__two--google">
+                   <div class="chat-opros chat-opros__form">
+                       <h4 class="gender-form">Ваш возраст</h4>
+                       <div class="gender__opros gender__two">
+                       <label class="gender__item gender__item-age" id="age">
+                       <input type="radio" name="age">
+                       <div class="gender__active"></div>
+                       <p class="gender__person">до 17</p>
+                       </label>
+                       <label class="gender__item gender__item-age" id="age">
+                       <input type="radio" name="age">
+                       <div class="gender__active"></div>
+                       <p class="gender__person">18-21</p>
+                       </label>
+                       <label class="gender__item gender__item-age" id="age">
+                       <input type="radio" name="age">
+                       <div class="gender__active"></div>
+                       <p class="gender__person">22-25</p>
+                       </label>
+                       <label class="gender__item gender__item-age" id="age">
+                       <input type="radio" name="age">
+                       <div class="gender__active"></div>
+                       <p class="gender__person">26-35</p>
+                       </label>
+                       <label class="gender__item gender__item-age" id="age">
+                       <input type="radio" name="age">
+                       <div class="gender__active"></div>
+                       <p class="gender__person">старше 36</p>
+                       </label>
+                       </div>
+                    </div>
+                    <div class="google-form__buttons">
+                       <input type="button" name="next" class="next--google next--google-gen action-button" value="ДАЛЕЕ" />
+                    </div>
+               </div>
+            </div>
+
         </div>
     </div>
 </body>
